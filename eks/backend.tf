@@ -9,8 +9,8 @@ terraform {
   backend "s3" {
     bucket         = "avi-aws-bucket1"
     region         = "us-east-1"
-    key            = "avinash"
-    dynamodb_table = "lock-files"
+    key            = "eks/terraform.tfstate"
+    dynamodb_table = "Lock-Files"
     encrypt        = true
   }
 }
