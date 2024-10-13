@@ -8,7 +8,7 @@ terraform {
   }
   backend "s3" {
     bucket         = "devopsified"
-    region         = "ap-south-1"
+    region         = "us-east-1"
     key            = "eks/terraform.tfstate"
     dynamodb_table = "devopsified"
     encrypt        = true
