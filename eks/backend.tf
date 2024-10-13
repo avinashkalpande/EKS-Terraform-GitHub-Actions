@@ -7,10 +7,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "terraform-bucket-mern"
+    bucket         = "devopsified"
     region         = "ap-south-1"
     key            = "eks/terraform.tfstate"
-    dynamodb_table = "dynamobd-state-lock"
+    dynamodb_table = "devopsified"
     encrypt        = true
   }
 }
